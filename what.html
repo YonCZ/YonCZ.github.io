@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! | For Kiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex items-center justify-center bg-gradient-to-br from-pink-300 to-pink-100">
+
+    <div class="bg-pink-50/90 p-8 md:p-12 rounded-[3rem] shadow-xl border border-white backdrop-blur-sm w-[90%] md:w-[45%] h-auto text-center flex flex-col items-center gap-10">
+        
+        <h1 class="text-4xl font-bold text-pink-600 leading-tight">
+            What will we do? 🤔
+        </h1>
+
+        <div class="flex flex-wrap justify-center items-start gap-8 w-full">
+            
+            <div class="flex flex-col items-center gap-4 group">
+                <div class="w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-3xl bg-pink-200 shadow-md">
+                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjhvOHV6ZWl4YmV1eXZnaGJjM3JnOGo2NnpjOHI1M2loa256N2NoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h58iHW2PXQJCVgdzcX/giphy.gif" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-bold text-pink-500 text-lg">Watch a movie or a show</h2>
+                <button onclick="sendEmail('watch a show')" class="w-full bg-white hover:bg-pink-500 border-2 border-pink-400 text-pink-500 hover:text-white font-bold py-2 rounded-xl transition-all hover:scale-105 shadow-sm">
+                    Watch
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center gap-4 group">
+                <div class="w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-3xl bg-pink-200 shadow-md">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHpmZGp0c2VqdHozaTdvb3RiYmpjamRyMTZvdmY1bHU2dGU5MXMwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Je9UNkwuArytFmM/giphy.gif" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-bold text-pink-500 text-lg">Play some games</h2>
+                <button onclick="sendEmail('play some games')" class="w-full bg-white hover:bg-pink-500 border-2 border-pink-400 text-pink-500 hover:text-white font-bold py-2 rounded-xl transition-all hover:scale-105 shadow-sm">
+                    Play
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center gap-4 group">
+                <div class="w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-3xl bg-pink-200 shadow-md">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXU5aWZwdTVhdW9pZXdieTRyZGJnZ28xd3M2NDkyYnM3bG0zMGdreiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hPNK2JUTsdEhTWCtEU/giphy.gif" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-bold text-pink-500 text-lg">Go out</h2>
+                <button onclick="sendEmail('go out and socialize')" class="w-full bg-white hover:bg-pink-500 border-2 border-pink-400 text-pink-500 hover:text-white font-bold py-2 rounded-xl transition-all hover:scale-105 shadow-sm">
+                    Socialize
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function sendEmail(activity) {
+            const email = "thadd2005@gmail.com"; // <-- PUT YOUR EMAIL HERE
+            const subject = "Valentyne";
+            const body = `Yes! I will be your Valentine and we will ${activity}! ❤️`;
+            
+            // This encodes the text so it works in a URL
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // This opens the user's email app
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>

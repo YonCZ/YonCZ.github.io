@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YonCZ | My Site</title>
+    <title>For Kiki | My Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-300 via-pink-100 to-white">
+<body class="h-screen flex items-center justify-center bg-gradient-to-br from-pink-300 to-pink-100">
 
-    <div class="bg-pink-50/80 p-10 rounded-3xl shadow-xl border border-white backdrop-blur-sm max-w-md w-full text-center">
-        <h1 class="text-3xl font-bold text-pink-600 mb-4">Welcome</h1>
-        <p class="text-pink-800/70">
-            This is my GitHub website. Clean, simple, and pink!
-        </p>
+    <div class="bg-pink-50/90 p-12 rounded-[3rem] shadow-xl border border-white backdrop-blur-sm w-[90%] md:w-[45%] h-[60%] text-center flex flex-col justify-between items-center">
         
-        <div class="mt-6">
-            <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">
-                Follow Me
-            </button>
+        <h1 class="text-4xl font-bold text-pink-600 leading-tight">
+            Kiki, will you be my Valentine?
+        </h1>
+
+        <div class="flex-1 flex items-center justify-center my-8">
+            <div class="w-64 h-64 overflow-hidden rounded-3xl shadow-md bg-pink-200">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueGZidXpueGZidXpueGZidXpueGZidXpueGZidXpueGZidSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" 
+                     alt="Cute Bear" 
+                     class="w-full h-full object-cover">
+            </div>
         </div>
+
+        <div class="flex gap-6 w-full justify-center">
+            <a href="yes.html" class="flex-1 max-w-[150px] bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 rounded-2xl transition-all hover:scale-125 shadow-lg flex items-center justify-center">
+                Yes
+            </a>
+            
+            <a href="no.html" class="flex-1 max-w-[150px] bg-white border-2 border-pink-200 text-pink-400 font-bold py-4 rounded-2xl transition-all hover:bg-red-600 hover:scale-[10%] shadow-sm flex items-center justify-center">
+                No
+            </a>
+        </div>
+
     </div>
 
 </body>
