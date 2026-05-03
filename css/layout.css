@@ -110,7 +110,7 @@ header {
 .nav-link:hover, .nav-link.active { color: var(--clr-white); }
 .nav-link.active::after, .nav-link:hover::after { width: 100%; }
 
-/* --- FIXED LOGO IN CIRCLE --- */
+/* --- LOGO --- */
 .logo {
   position: fixed;
   top: 1rem;
@@ -121,11 +121,11 @@ header {
 }
 
 .logo-circle {
-  width: 48px;  /* Velikost kolečka */
+  width: 48px;
   height: 48px;
-  background-color: var(--clr-bg); /* Stejné jako navbar */
-  border: 1px solid #2a2a2a;       /* Stejný border jako máš u home-card */
-  border-radius: 50%;              /* Udělá dokonalý kruh */
+  background-color: var(--clr-bg);
+  border: 1px solid #2a2a2a;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,19 +134,18 @@ header {
 }
 
 .logo-img {
-  width: 24px;  /* Velikost loga uvnitř kolečka */
+  width: 24px;
   height: 24px;
   display: block;
 }
 
-/* --- HOVER EFEKTY --- */
 .logo:hover {
   transform: scale(1.1);
 }
 
 .logo:hover .logo-circle {
-  border-color: var(--clr-gray-l); /* Zvýrazní okraj při najetí */
-  background-color: #252525;       /* Mírně zesvětlí pozadí */
+  border-color: var(--clr-gray-l);
+  background-color: #252525;
 }
 
 /* --- MOBILE MENU --- */
