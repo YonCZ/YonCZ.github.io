@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tadeáš Přikryl — Experience" />
+  <title>Experience — Tadeáš Přikryl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/expirience.css">
+</head>
+<body data-page="experiences">
+  <a href="https://yoncz.github.io/" class="logo">
+  <div class="logo-circle">
+    <img src="img/logo.svg" alt="Home logo" class="logo-img">
+  </div>
+</a>
+  <header>
+    <nav id="navbar" aria-label="Main navigation">
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="experiences.html" class="nav-link" data-page="experiences">Experience</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+        <li><a href="technologies.html" class="nav-link" data-page="technologies">Technologies</a></li>
+        <li><a href="connect.html" class="nav-link" data-page="connect">Connect</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="experiences.html" class="mobile-link">Experience</a></li>
+        <li><a href="projects.html" class="mobile-link">Projects</a></li>
+        <li><a href="technologies.html" class="mobile-link">Technologies</a></li>
+        <li><a href="connect.html" class="mobile-link">Connect</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="experiences" aria-label="Experience">
+      <h2 class="section-title">My Career</h2>
+      <hr class="section-divider" aria-hidden="true" />
+
+      <div class="timeline-section">
+        <h3 class="timeline-section-title">Education</h3>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true">
+            <div></div>
+          </div>
+          <a href="https://www.fit.vut.cz" target="_blank" rel="noopener noreferrer" class="timeline-card left clickable">
+            <div class="exp-card-head">
+              <span class="exp-title">Information Technology</span>
+              <span class="exp-badge exp-badge--active">Active</span>
+            </div>
+            <p class="exp-date">2025 — Present</p>
+            <p class="exp-place">VUT FIT, Brno</p>
+            <p class="exp-desc">Bachelor's program focused on software engineering, computer networks and AI fundamentals.</p>
+          </a>
+          <a href="https://www.kgtrebic.cz" target="_blank" rel="noopener noreferrer" class="timeline-card right clickable">
+            <div class="exp-card-head">
+              <span class="exp-title">Gymnasium</span>
+              <span class="exp-badge">Completed</span>
+            </div>
+            <p class="exp-date">2018 — 2025</p>
+            <p class="exp-place">Catholic Gymnasium Třebíč</p>
+            <p class="exp-desc">Graduated with honors. Specialized in mathematics and programming.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <h3 class="timeline-section-title">Experience</h3>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true">
+            <div></div>
+          </div>
+          <article class="timeline-card left">
+            <div class="exp-card-head">
+              <span class="exp-title">Freelance Webdev</span>
+              <span class="exp-badge exp-badge--active">Active</span>
+            </div>
+            <p class="exp-date">2026 — Present</p>
+            <p class="exp-place">Self-employed</p>
+            <p class="exp-desc">Designing and developing web apps for small businesses and startups — from concept to deployment.</p>
+          </article>
+          <article class="timeline-card right">
+            <div class="exp-card-head">
+              <span class="exp-title">OneCalend - Startup</span>
+              <span class="exp-badge">Completed</span>
+            </div>
+            <p class="exp-date">Early 2025</p>
+            <p class="exp-place">AI Engineer</p>
+            <p class="exp-desc">Developed a specialized AI model by fine-tuning GPT with a custom dataset. The model provides intelligent recommendations for calendar event naming.</p>
+          </article>
+          <article class="timeline-card left">
+            <div class="exp-card-head">
+              <span class="exp-title">Finance Assistant</span>
+              <span class="exp-badge">Completed</span>
+            </div>
+            <p class="exp-date">2023 — 2024</p>
+            <p class="exp-place">Zeppyr s.r.o.</p>
+            <p class="exp-desc">Gained a foundational understanding of business economics by managing financial workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tadeáš Přikryl. Made with love.</p>
+    <p>HTML · CSS · JavaScript</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
